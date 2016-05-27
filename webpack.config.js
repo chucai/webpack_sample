@@ -4,7 +4,7 @@ module.exports = {
     path: './bin',
     filename: 'app.bundle.js'
   },
-  modules: {
+  module: {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules/,

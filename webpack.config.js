@@ -4,4 +4,11 @@ module.exports = {
     path: './bin',
     filename: 'app.bundle.js'
   },
+  modules: {
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader'
+    }]
+  }
 };

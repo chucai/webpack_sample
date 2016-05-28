@@ -1,6 +1,7 @@
 import 'babel-polyfill';
 import cats from './cats';
 import $ from 'jquery';
+import './app.css';
 
 $("<h1>Catas</h1>").appendTo('body');
 const ul = $('<ul></ul>').appendTo('body');

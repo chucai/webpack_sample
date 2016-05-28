@@ -10,6 +10,9 @@ module.exports = {
     filename: 'app.bundle.js',
     chunkFilename: "[id].js"
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       {

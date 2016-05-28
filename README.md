@@ -12,4 +12,5 @@ npm install -g webpack-dev-server
 ```
 
 ## 参考资料
-![webpack的配置](https://webpack.github.io/docs/configuration.html)
+[webpack的配置](https://webpack.github.io/docs/configuration.html)
+[react教程](https://hulufei.gitbooks.io/react-tutorial/)

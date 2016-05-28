@@ -2,10 +2,13 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: {
+    app: './src/app',
+  },
   output: {
     path: './bin',
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    chunkFilename: "[id].js"
   },
   module: {
     loaders: [

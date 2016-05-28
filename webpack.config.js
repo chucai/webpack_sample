@@ -29,10 +29,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("[name].css"),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false },
       output: { comments: false }
     }),
+    new ExtractTextPlugin("[name].css"),
   ]
 };

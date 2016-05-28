@@ -7,7 +7,7 @@ module.exports = {
     app: './app/index',
   },
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: path.resolve(__dirname, "public", "assets"),
     publicPath: "/assets/",
     filename: 'app.bundle.js',
     chunkFilename: "[id].js"

@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: './src/app.js',
@@ -16,11 +17,16 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        loader: 'style!css'
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader"),
+      },
+      {
+        test: /\.less$/,
+        loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
       }
     ]
   },
   plugins: [
+    new ExtractTextPlugin("[name].css"),
     new webpack.optimize.UglifyJsPlugin({
       compress: { warnings: false },
       output: { comments: false }

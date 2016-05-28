@@ -1,3 +1,4 @@
+var path = require("path");
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -6,7 +7,8 @@ module.exports = {
     app: './app/index',
   },
   output: {
-    path: './bin',
+    path: path.resolve(__dirname, "public"),
+    publicPath: "/assets/",
     filename: 'app.bundle.js',
     chunkFilename: "[id].js"
   },

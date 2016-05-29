@@ -13,8 +13,9 @@ npm install -g webpack-dev-server
 ```
 
 ## TODO
-1. 热加载react js代码
-2. webpack.config.js: 开发环境和生产环境分离
+- [x] 支持webpack refresh
+- [ ] webpack.config.js: 开发环境和生产环境分离
+- [ ] 使用react-redux
 
 ## 参考资料
 [webpack的配置](https://webpack.github.io/docs/configuration.html)

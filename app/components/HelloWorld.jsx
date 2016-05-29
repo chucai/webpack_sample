@@ -1,6 +1,7 @@
 require('./HelloWorld.scss');
 import React from 'react';
 import { Button, Row, Col } from 'antd';
+import HelloCard from './HelloCard';
 
 export default class HelloWorld extends React.Component {
 
@@ -14,6 +15,7 @@ export default class HelloWorld extends React.Component {
       <Col span={16}>
         <p> 欢迎来到React的Hello World世界 </p>
         <Button type="primary">Primary</Button>
+        <HelloCard />
       </Col>
       </Row>
       </div>

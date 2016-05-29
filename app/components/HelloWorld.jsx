@@ -1,14 +1,21 @@
 require('./HelloWorld.scss');
 import React from 'react';
-import { Button } from 'antd';
+import { Button, Row, Col } from 'antd';
 
 export default class HelloWorld extends React.Component {
 
   render() {
     return (
       <div className='helloworld-component'>
+      <Row>
+      <Col span={8}>
+        这是边栏
+      </Col>
+      <Col span={16}>
         <p> 欢迎来到React的Hello World世界 </p>
         <Button type="primary">Primary</Button>
+      </Col>
+      </Row>
       </div>
     )
   };
